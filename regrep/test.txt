@@ -1,0 +1,16 @@
+package main
+
+import "fmt"
+
+func main() {
+    fmt.Println("Hello, World!")
+    // TODO: 今後の実装予定
+    err := someFunction()
+    if err != nil {
+        fmt.Println("Error occurred:", err)
+    }
+}
+
+func someFunction() error {
+    return nil
+} 
