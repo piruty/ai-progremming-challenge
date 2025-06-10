@@ -1,0 +1,41 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "age": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 150
+    },
+    "email": {
+      "type": "string",
+      "format": "email"
+    },
+    "address": {
+      "type": "object",
+      "properties": {
+        "zip": {"type": "string"},
+        "city": {"type": "string"},
+        "street": {"type": "string"}
+      },
+      "required": ["zip", "city", "street"]
+    },
+    "hobbies": {
+      "type": "array",
+      "items": {"type": "string"}
+    },
+    "isActive": {
+      "type": "boolean"
+    },
+    "score": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 100
+    }
+  },
+  "required": ["name", "age", "email"]
+} 

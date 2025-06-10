@@ -1,0 +1,13 @@
+{
+  "name": "田中太郎",
+  "age": 30,
+  "email": "tanaka@example.com",
+  "address": {
+    "zip": "123-4567",
+    "city": "東京都",
+    "street": "渋谷区1-2-3"
+  },
+  "hobbies": ["読書", "映画鑑賞", "プログラミング"],
+  "isActive": true,
+  "score": 85.5
+} 
